@@ -100,7 +100,7 @@ const ServicesSection = () => {
           {specializedServices.map((service) => (
             <div
               key={service.title}
-              className="group relative overflow-hidden rounded-xl border border-border h-64 cursor-pointer"
+              className="group relative overflow-hidden rounded-xl border border-border h-52 md:h-64 cursor-pointer"
             >
               <div className="absolute inset-0">
                 <img
