@@ -5,9 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" }
+    { icon: Instagram, href: "https://www.instagram.com/agiliza.agromkt?igsh=MWIxdG95emd4dTY0Ng==", label: "Instagram" },
+    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=100075945081561&mibextid=rS40aB7S9Ucbxw6v", label: "Facebook" }
   ];
 
   const quickLinks = [
@@ -21,14 +20,14 @@ const Footer = () => {
   return (
     <footer className="relative border-t border-border">
       <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 to-background" />
-      
+
       <div className="relative z-10 container mx-auto px-4 py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Logo className="mb-6" />
             <p className="text-sm text-muted-foreground mb-6">
-              Marketing estratégico para o agronegócio. 
+              Marketing estratégico para o agronegócio.
               Conectando marcas do campo ao mundo digital.
             </p>
             <div className="flex gap-3">
@@ -71,19 +70,20 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-gold mt-0.5 shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  (00) 00000-0000
+                  (95) 99133-0935
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-gold mt-0.5 shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  contato@agilizaagro.com.br
+                  agiliza.agromarketing@gmail.com
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gold mt-0.5 shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  São Paulo - SP, Brasil
+                  Av. Ataíde Teive 3478 - 1º piso/ Sala 01<br />
+                  Bairro Buritis - Boa Vista, RR
                 </span>
               </li>
             </ul>
@@ -110,9 +110,15 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground text-center md:text-left">
-            © {currentYear} Agiliza Agromarketing. Todos os direitos reservados.
-          </p>
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <p className="text-sm text-muted-foreground text-center md:text-left">
+              © {currentYear} Agiliza Agromarketing. Todos os direitos reservados.
+            </p>
+            <span className="hidden md:inline text-border">|</span>
+            <p className="text-sm text-muted-foreground flex items-center gap-1">
+              Produzida com 💚 por Camaly
+            </p>
+          </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-gold transition-colors">
               Política de Privacidade

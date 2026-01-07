@@ -7,6 +7,7 @@ import PlansSection from "@/components/PlansSection";
 import ClientsSection from "@/components/ClientsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -14,14 +15,15 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <ServicesSection />
         <AboutSection />
         <AreasSection />
-        <ServicesSection />
         <PlansSection />
         <ClientsSection />
         <CTASection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

@@ -24,13 +24,13 @@ const CTASection = () => {
           </h2>
 
           <p className="text-body mb-10 max-w-xl mx-auto">
-            Transforme a comunicação do seu negócio com estratégias que 
+            Transforme a comunicação do seu negócio com estratégias que
             conectam, engajam e convertem. Fale com nossos especialistas.
           </p>
 
           {/* CTA Button */}
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5595991330935"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary-gold inline-flex items-center gap-3 text-lg group"

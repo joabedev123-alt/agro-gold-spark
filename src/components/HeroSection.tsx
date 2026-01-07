@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-background">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl animate-float" />
@@ -25,14 +25,16 @@ const HeroSection = () => {
 
         {/* Subheadline */}
         <p className="text-body max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-          Produção audiovisual, comunicação dentro e fora da porteira e soluções 
+          Produção audiovisual, comunicação dentro e fora da porteira e soluções
           digitais para marcas agro
         </p>
 
         {/* Primary CTA */}
         <div className="mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.8s" }}>
           <a
-            href="#contato"
+            href="https://wa.me/5595991330935"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary-gold inline-flex items-center gap-2 text-lg group"
           >
             Falar com um especialista
@@ -43,7 +45,7 @@ const HeroSection = () => {
         {/* Social CTAs */}
         <div className="flex flex-wrap justify-center gap-4 opacity-0 animate-fade-in" style={{ animationDelay: "1s" }}>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5595991330935"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline-gold flex items-center gap-2"

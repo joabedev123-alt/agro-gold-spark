@@ -1,13 +1,49 @@
-import { 
-  ClipboardList, 
-  BarChart3, 
-  Lightbulb, 
-  Globe, 
-  FileText, 
-  Palette 
+import {
+  ClipboardList,
+  BarChart3,
+  Lightbulb,
+  Globe,
+  FileText,
+  Palette,
+  Gavel,
+  Store,
+  Sprout,
+  Tractor
 } from "lucide-react";
 
+import cattleAuctionImg from "../assets/services/cattle-auction.png";
+import agroStoreImg from "../assets/services/agro-store.png";
+import plantingImg from "../assets/services/planting.png";
+import machineryImg from "../assets/services/machinery.png";
+
 const ServicesSection = () => {
+  const specializedServices = [
+    {
+      icon: Gavel,
+      title: "Bois Leilões",
+      description: "Marketing especializado e cobertura completa para leilões de gado",
+      image: cattleAuctionImg
+    },
+    {
+      icon: Store,
+      title: "Lojas Agropecuárias",
+      description: "Estratégias de vendas e posicionamento para o varejo agro",
+      image: agroStoreImg
+    },
+    {
+      icon: Sprout,
+      title: "Plantio de Soja e Milho",
+      description: "Soluções de comunicação para o ciclo completo da lavoura",
+      image: plantingImg
+    },
+    {
+      icon: Tractor,
+      title: "Loja de Maquinário",
+      description: "Divulgação estratégica para revendas e concessionárias agrícolas",
+      image: machineryImg
+    }
+  ];
+
   const services = [
     {
       icon: ClipboardList,
@@ -44,7 +80,7 @@ const ServicesSection = () => {
   return (
     <section id="servicos" className="section-padding relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
-      
+
       <div className="relative z-10 container mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -59,7 +95,40 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Specialized Services Grid */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {specializedServices.map((service) => (
+            <div
+              key={service.title}
+              className="group relative overflow-hidden rounded-xl border border-border h-64 cursor-pointer"
+            >
+              <div className="absolute inset-0">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
+              </div>
+
+              <div className="relative h-full p-8 flex flex-col justify-end">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 rounded-lg bg-gold/20 backdrop-blur-sm text-gold">
+                    <service.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">
+                    {service.title}
+                  </h3>
+                </div>
+                <p className="text-white/80 transform translate-y-0 opacity-100 md:translate-y-4 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-300">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Standard Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div

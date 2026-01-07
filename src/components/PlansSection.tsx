@@ -110,9 +110,14 @@ const PlansSection = () => {
               </ul>
 
               {/* CTA */}
-              <button className={`w-full py-3 rounded-lg font-semibold text-primary-foreground transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 ${plan.btnClass}`}>
+              <a
+                href="https://wa.me/5595991330935"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block w-full text-center py-3 rounded-lg font-semibold text-primary-foreground transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 ${plan.btnClass}`}
+              >
                 {plan.cta}
-              </button>
+              </a>
             </div>
           ))}
         </div>

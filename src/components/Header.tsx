@@ -24,11 +24,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -47,7 +46,9 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="#contato"
+              href="https://wa.me/5595991330935"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary-gold text-sm px-5 py-2.5"
             >
               Fale Conosco
@@ -83,7 +84,9 @@ const Header = () => {
                 </a>
               ))}
               <a
-                href="#contato"
+                href="https://wa.me/5595991330935"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="mx-4 mt-2 btn-primary-gold text-center py-3"
               >
