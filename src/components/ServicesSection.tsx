@@ -13,32 +13,32 @@ import {
 
 import cattleAuctionImg from "../assets/services/cattle-auction.png";
 import agroStoreImg from "../assets/services/agro-store.png";
-import plantingImg from "../assets/services/planting.png";
+import plantingImg from "../assets/services/cobertura/cobertura de plantio.jpg";
 import machineryImg from "../assets/services/machinery.png";
 
 const ServicesSection = () => {
   const specializedServices = [
     {
       icon: Gavel,
-      title: "Bois Leilões",
+      title: "Cobertura de Leilões",
       description: "Marketing especializado e cobertura completa para leilões de gado",
       image: cattleAuctionImg
     },
     {
       icon: Store,
-      title: "Lojas Agropecuárias",
+      title: "Gestão de Redes Sociais",
       description: "Estratégias de vendas e posicionamento para o varejo agro",
       image: agroStoreImg
     },
     {
       icon: Sprout,
-      title: "Plantio de Soja e Milho",
+      title: "Acompanhamento de Plantio e Colheita",
       description: "Soluções de comunicação para o ciclo completo da lavoura",
       image: plantingImg
     },
     {
       icon: Tractor,
-      title: "Loja de Maquinário",
+      title: "Criação de Logomarca e Identidade Visual",
       description: "Divulgação estratégica para revendas e concessionárias agrícolas",
       image: machineryImg
     }
@@ -88,7 +88,7 @@ const ServicesSection = () => {
             Serviços
           </span>
           <h2 className="heading-lg text-foreground mb-6">
-            Nossos <span className="text-gradient-gold">Serviços</span>
+            Nossas <span className="text-gradient-gold">Soluções</span>
           </h2>
           <p className="text-body max-w-2xl mx-auto">
             Oferecemos um portfólio completo de soluções para impulsionar sua comunicação
@@ -100,7 +100,7 @@ const ServicesSection = () => {
           {specializedServices.map((service) => (
             <div
               key={service.title}
-              className="group relative overflow-hidden rounded-xl border border-border h-52 md:h-64 cursor-pointer"
+              className="group relative overflow-hidden rounded-xl border border-border h-72 md:h-64 cursor-pointer"
             >
               <div className="absolute inset-0">
                 <img
@@ -111,12 +111,12 @@ const ServicesSection = () => {
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300" />
               </div>
 
-              <div className="relative h-full p-8 flex flex-col justify-end">
+              <div className="relative h-full p-6 md:p-8 flex flex-col justify-end">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="p-2 rounded-lg bg-gold/20 backdrop-blur-sm text-gold">
                     <service.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white">
+                  <h3 className="text-xl md:text-2xl font-bold text-white">
                     {service.title}
                   </h3>
                 </div>

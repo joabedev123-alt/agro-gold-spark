@@ -1,4 +1,5 @@
-import { MessageCircle, Instagram, Facebook, ArrowRight } from "lucide-react";
+import { Instagram, Facebook, ArrowRight } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import Logo from "./Logo";
 
 const HeroSection = () => {
@@ -18,7 +19,7 @@ const HeroSection = () => {
         </div>
 
         {/* Headline */}
-        <h1 className="heading-xl text-foreground mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+        <h1 className="heading-xl text-foreground mb-6 opacity-0 animate-fade-in uppercase" style={{ animationDelay: "0.4s" }}>
           Marketing estratégico para o{" "}
           <span className="text-gradient-gold">Agronegócio</span>
         </h1>
@@ -50,7 +51,7 @@ const HeroSection = () => {
             rel="noopener noreferrer"
             className="btn-outline-gold flex items-center gap-2"
           >
-            <MessageCircle className="w-5 h-5" />
+            <FaWhatsapp className="w-5 h-5" />
             <span>WhatsApp</span>
           </a>
           <a
@@ -73,12 +74,7 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in" style={{ animationDelay: "1.2s" }}>
-          <div className="w-6 h-10 border-2 border-gold/50 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-gold rounded-full animate-bounce" />
-          </div>
-        </div>
+
       </div>
     </section>
   );
